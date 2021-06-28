@@ -1,0 +1,84 @@
+.card{
+  background-color: brown;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 20px 32px -6px rgba(#000, .3);
+  .profile {
+    display: inline-flex;
+    align-items: center;
+    h3 {
+      font-weight: 600;
+    }
+    p {
+      color: rgba($white, .5);
+    }
+    img {
+      border-radius: 50%;
+      border: 2px solid wheat;
+      width: 36px;
+      margin-right: 16px;
+    }
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin: 15px 0
+  }
+  p {
+    color: rgba($white, 0.7);
+  }
+}
+
+.one {
+  background-color: $moderate-violete;
+}
+
+.two {
+  background-color: $grayish-blue;
+}
+
+.three, .five {
+  background-color: $white;
+  color: #000;
+  p {
+    color: rgba( #000000, 0.7);
+  }
+  .profile {
+    p {
+      color: rgba( #000000, 0.5);
+    }
+    img {
+      border: 0;
+    }
+  }
+}
+
+.four {
+  background-color: $blackish-blue;
+}
+
+@include responsive-desktop {
+
+  .card {
+    p {
+      font-size: 1.4 rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .one{
+    grid-area: card-one;
+  }
+  
+  .three {
+    grid-area: card-three;
+  }
+  
+  .four {
+    grid-area: card-four;
+  }
+  
+  .five {
+    grid-area: card-five;
+  }
+}

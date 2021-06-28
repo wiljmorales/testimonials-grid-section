@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+  @include responsive-desktop {
+    width: 80vw;
+    margin: 50px auto;
+    grid-template-areas: 
+    "card-one   card-one  card-two  card-five"
+    "card-three card-four card-four card-five";
+  }
+}

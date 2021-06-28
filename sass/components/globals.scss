@@ -1,0 +1,24 @@
+$moderate-violete: hsl(263, 55%, 52%);
+$grayish-blue: hsl(217, 19%, 35%);
+$blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+@mixin responsive-desktop {
+  @media (min-width: 1440px) { @content }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: $white;
+}

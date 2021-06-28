@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
+}
+
+.card {
+  background-color: brown;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 20px 32px -6px rgba(0, 0, 0, 0.3);
+}
+.card .profile {
+  display: inline-flex;
+  align-items: center;
+}
+.card .profile h3 {
+  font-weight: 600;
+}
+.card .profile p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.card .profile img {
+  border-radius: 50%;
+  border: 2px solid wheat;
+  width: 36px;
+  margin-right: 16px;
+}
+.card h2 {
+  font-size: 1.6rem;
+  margin: 15px 0;
+}
+.card p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.one {
+  background-color: #7541c8;
+}
+
+.two {
+  background-color: #48556a;
+}
+
+.three, .five {
+  background-color: white;
+  color: #000;
+}
+.three p, .five p {
+  color: rgba(0, 0, 0, 0.7);
+}
+.three .profile p, .five .profile p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.three .profile img, .five .profile img {
+  border: 0;
+}
+
+.four {
+  background-color: #19212e;
+}
+
+@media (min-width: 1440px) {
+  .card p {
+    font-size: 1.4 rem;
+  }
+  .card h2 {
+    font-size: 2.4rem;
+  }
+
+  .one {
+    grid-area: card-one;
+  }
+
+  .three {
+    grid-area: card-three;
+  }
+
+  .four {
+    grid-area: card-four;
+  }
+
+  .five {
+    grid-area: card-five;
+  }
+}
+.container {
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 80vw;
+    margin: 50px auto;
+    grid-template-areas: "card-one   card-one  card-two  card-five" "card-three card-four card-four card-five";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
